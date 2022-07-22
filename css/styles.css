@@ -126,7 +126,8 @@ top: 0; */
 .logo span {
   color: var(--accent-color);
 }
-  
+
+
 .logo:hover,
 .logo:focus {
   color: var(--link-hover-color);
