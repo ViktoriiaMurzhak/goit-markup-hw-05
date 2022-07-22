@@ -178,7 +178,7 @@ top: 0; */
 
 .link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: '';
 
@@ -884,8 +884,6 @@ transition: transform var(--time-hover) var(--time-function);
   display: block;
 }
 
-.portf-overlay {
-}
 
 .portf-list-title {
   margin-bottom: 4px;
