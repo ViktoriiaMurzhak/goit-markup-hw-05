@@ -20,7 +20,7 @@
       <a class="logo" href="./index.html"><span>Web</span>Studio</a>
       <!-- Навігація на інші сторінки -->
         <ul class="site-nav list">
-          <li class="item"><a class="link studio" href="/index.html">Студия</a></li>
+          <li class="item"><a class="link current" href="/index.html">Студия</a></li>
           <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
           <li class="item"><a class="link" href="">Контакты</a></li>
         </ul>
@@ -45,8 +45,19 @@
       <section class="section hero">
         <div class="container">
       <h1 class="section-title hero">Эффективные решения для вашего бизнеса</h1>
-      <button type="button" class="btn-order"> Заказать услугу</button>
+      <button data-modal-open type="button" class="btn-order"> Заказать услугу</button>
     </div>
+
+    <div data-modal class="backdrop is-hidden">
+    <div class="modal">
+      <button data-modal-close type="button" class="btn-modal-close">
+        <svg class="icon-close">
+          <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
+
   </section>
     
    <!-- Cписок особливостей -->
@@ -98,9 +109,21 @@
         <div class="container">
         <h2 class="section-title work">Чем мы занимаемся</h2>
         <ul class="work-list list">
-          <li class="item"><img src="./images/box1.jpg" alt="photo1" width="370" class="work-img"></li>
-          <li class="item"><img src="./images/box2.jpg" alt="photo2" width="370" class="work-img"></li>
-          <li class="item"><img src="./images/box3.jpg" alt="photo3" width="370" class="work-img"></li>
+          <li class="item"><img src="./images/box1.jpg" alt="photo1" width="370" class="work-img">
+            <div class="work-text-position">
+              <p>Десктопные приложения</p>
+            </div>
+          </li>
+          <li class="item"><img src="./images/box2.jpg" alt="photo2" width="370" class="work-img">
+            <div class="work-text-position">
+              <p>Мобильные приложения</p>
+            </div>
+          </li>
+          <li class="item"><img src="./images/box3.jpg" alt="photo3" width="370" class="work-img">
+            <div class="work-text-position">
+              <p>Дизайнерские решения</p>
+            </div>
+          </li>
         </ul>
         </div>
       </section>
@@ -366,7 +389,11 @@
         </ul>
       </div>
     </div>
+    
+ 
   </footer>
+
+  <script src="./js/modal.js"></script>
 </body>
 </html>
 
