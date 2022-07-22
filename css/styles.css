@@ -761,10 +761,6 @@ s.ection-title.clients {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
-  transition-property: fill;
-  transition-duration: var(--time-hover);
-  transition-timing-function: var(--time-function);
 }
 
 .btn-modal-close:hover .icon-close{
@@ -775,6 +771,10 @@ s.ection-title.clients {
   width: 11px;
   height: 11px;
   fill: #000;
+
+    transition-property: fill;
+  transition-duration: var(--time-hover);
+  transition-timing-function: var(--time-function);
 }
 
 /* ================= */
