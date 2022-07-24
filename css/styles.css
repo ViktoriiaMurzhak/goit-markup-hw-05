@@ -202,11 +202,6 @@ top: 0; */
   gap: 30px;
 }
 
-/* .hdr-contact .item + .item {
-  margin-left: 30px; 
-
-} */
-
 .hdr-contact .item {
   display: flex;
   align-items: center;
@@ -411,9 +406,6 @@ section.hero {
   color: #ffffff;
 }
 
-/* .work-list .item+.item{
-  margin-left: 30px;
-} */
 
 /* =======TEAM======= */
 /* Наша команда */
@@ -448,9 +440,6 @@ section.hero {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* .team-list .item+.item{
-  margin-left: 30px;
-} */
 .team-card {
   display: block;
 }
@@ -570,7 +559,7 @@ s.ection-title.clients {
 /*========FOOTER========*/
 .container.footer {
   display: flex;
-  /* align-items: center; */
+  align-items: baseline;
 }
 
 .footer-box {
@@ -661,7 +650,6 @@ s.ection-title.clients {
 
 .footer-link {
   margin-left: 70px;
-  padding-top: 12px;
 }
 
 .footer-link-text {
